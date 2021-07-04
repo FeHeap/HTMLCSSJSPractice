@@ -9,14 +9,14 @@ body {
 a {
     color: #df4839;
 }
+a:hover {
+    color: #ff705b;
+    text-decoration: none;
+}
 
 /*頁首,導覽,頁尾的共通設定*/
-h1 {
-    margin: 40px;
-    padding: 30px;
-    border: 100px;
-    background-color: #6fbb9a;
-    color: #fff;
+header,nav,footer {
+    text-align: center;
 }
 
 /*導覽樣式設定*/
@@ -24,25 +24,66 @@ h1 {
 
 
 /*頁面標題設定*/
-
+h1 {
+    width: 300px;
+    margin: 40px auto;
+    padding: 30px;
+    border: 5px solid #95dbbd;
+    background-color: #6fbb9a;
+    color: #fff;
+    font-size: 300%;
+    text-align: center;
+    line-height: 1;
+}
 
 /*次標題設定*/
-
+.h {
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px dotted #94c8b1;
+    border-left: 10px solid #d0e35b;
+    color: #6fbb9a;
+}
 
 /*小標題設定*/
-
+.h-sub span {
+    font-weight: normal;
+}
 
 /*內容區塊邊框設定*/
-
+#contents {
+    margin: 40px;
+    padding: 40px 80px;
+    border: 1px solid #f6bb9e;
+    background-color: #fff;
+}
 
 /*「更多介紹」連結設定*/
-
+.more {
+    text-align: right;
+}
+.more::after{
+    content: url(img/ico_arrow.png);
+    margin: 3px;
+    vertical-align: middle;
+}
 
 /*連結圖示設定*/
-
+a[target="_blank"]::after {
+    content: url(img/ico_blank.png);
+    margin-left: 5px;
+    vertical-align: middle;
+}
+a[href^="mailto:"]::after {
+    content: url(img/ico_mail.png);
+    margin-left: 5px;
+    vertical-align: middle; 
+}
 
 /*區塊間分隔*/
-
+#contents > section + section {
+    margin-top: 80px;
+}
 
 /*文繞圖設定*/
 
