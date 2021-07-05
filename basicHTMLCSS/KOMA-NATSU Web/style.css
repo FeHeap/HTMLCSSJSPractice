@@ -2,7 +2,12 @@
 
 /*視窗背景色設定*/
 body {
+    /*
     background-color: #f0f0ff;
+    background-image: url(img/bg.png);
+    background-repeat: repeat-x;
+    */
+    background: #f0f0ff url(img/bg.png) repeat-x;
 }
 
 /*連結顏色設定*/
@@ -20,8 +25,23 @@ header,nav,footer {
 }
 
 /*導覽樣式設定*/
-
-
+.menu li {
+    list-style-type: none;
+    display: inline-block;
+    width: 180px;
+    margin: 0 10px;
+}
+.menu a {
+    display: block;
+    padding: 10px;
+    background: #6fbb9a;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+}
+.menu a:hover{
+    background: #90ddbb;
+}
 
 /*頁面標題設定*/
 h1 {
@@ -34,6 +54,11 @@ h1 {
     font-size: 300%;
     text-align: center;
     line-height: 1;
+    border-radius: 50%;
+    text-shadow: 1px 1px 2px #307657;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background-image: linear-gradient(to bottom, #6fbb9a, #4a9d79);
+    font-family: 'Limelight', cursive;
 }
 
 /*次標題設定*/
@@ -43,6 +68,15 @@ h1 {
     border: 1px dotted #94c8b1;
     border-left: 10px solid #d0e35b;
     color: #6fbb9a;
+    border-radius: 5px 0 0 5px;
+}
+
+.h-sub {
+    padding: 10px;
+    background-color: #fbf9cc;
+    color: #ff705b;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 2px #ffd0ad inset;
 }
 
 /*小標題設定*/
@@ -52,7 +86,8 @@ h1 {
 
 /*內容區塊邊框設定*/
 #contents {
-    margin: 40px;
+    width: 798px;
+    margin: 40px auto;
     padding: 40px 80px;
     border: 1px solid #f6bb9e;
     background-color: #fff;
@@ -86,8 +121,26 @@ a[href^="mailto:"]::after {
 }
 
 /*文繞圖設定*/
+.imgL {
+    float: left;
+    margin-right: 20px;
+}
+.imgR {
+    float: right;
+    margin-right: 20px;
+}
+.clear {
+    clear: both;
+}
 
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
 
 /*圓形圖片設定*/
-
+.img-round {
+    border-radius: 50%;
+}
 
