@@ -1,0 +1,58 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+  margin:0;
+  padding:0;
+}
+
+ul{
+  list-style: none;
+}
+
+
+#wrap{
+  width: 960px;
+  margin: 0 auto;
+  background-color: beige;
+}
+
+#header{
+  margin-bottom: 20px;
+  background-color: lightpink;
+}
+
+#footer{
+  background-color: gold;
+  clear: both;
+}
+
+.box li {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+/* 3 在父中元素中設定負的間距 */
+.box {
+    margin-right: -20px;
+}
+#main {
+    /* 隱藏超出的部分 */
+    overflow: hidden;
+}
+
+/*
+// 1 使用CSS3的虛擬類別 :nth-child(n)
+.box li:nth-child(4n) {
+    margin-right: 0;
+}
+*/
+
+/*
+// 2 使用CSS3的否定虛擬類別 :not(s)
+.box li:not(:nth-child(4n)) {
+    margin-right: 20px;
+}
+// 不知道為什麼沒起作用 Orz
+*/
