@@ -1,0 +1,84 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+  margin:0;
+  padding:0;
+}
+body {
+  margin: 20px;
+}
+section {
+  margin: 20px 0;
+}
+ul {
+  list-style: none;
+}
+.wrap {
+  margin: 50px;
+}
+.flex {
+  padding: 20px;
+  border: 1px solid #e7e7e7;
+  background: #ffffeb;
+}
+.flex li {
+  width: 100px;
+  padding: 15px;
+  border: 2px solid #666;
+  background: #80ceff;
+}
+
+/*flexbox版面適用*/
+.flex {
+    display: flex;
+}
+
+/*justify-content 設定主軸列對齊方式*/
+.no2 .flex {
+    justify-content: flex-start;    /*預設值，對其前端*/
+    justify-content: flex-end;      /*對其尾端*/
+    justify-content: center;        /*置中對齊*/
+    justify-content: space-around;  /*分散對齊*/
+    justify-content: space-between; /*分散對齊*/
+}
+
+/*aling-items 設定交叉軸對齊方式*/
+.no3 .flex .fzL {
+  font-size: 3em;
+}
+.no3 .flex {
+    align-items: stretch;   /*預設值，依內容最多的項目將所有項目高度切齊*/
+    align-items: flex-start;/*向上對齊*/
+    align-items: flex-end;  /*向下對齊*/
+    align-items: center;    /*置中對齊*/
+    align-items: baseline;  /*對齊基準線*/
+}
+
+/*flex-wrap 將項目多行顯示*/
+.no4 .flex {
+    flex-wrap: nowrap;  /*預設值，不換行*/
+    flex-wrap: wrap;    /*換行*/
+    flex-wrap: wrap-reverse;    /*換行+反轉*/
+}
+
+/*align-content 設定多行項目配置*/
+.no5 .flex {
+    height: 300px;
+    flex-wrap: wrap;
+    align-content: stretch; /*預設值*/
+    align-content: flex-start;
+    align-content: flex-end;
+    align-content: center;
+    align-content: space-around;
+    align-content: space-between;
+}
+
+/*flex-direction 修改軸方向*/
+.no6 .flex {
+    flex-direction: row; /*預設值*/
+    flex-direction: row-reverse;
+    flex-direction: column;
+    flex-direction: column-reverse;
+}
+
