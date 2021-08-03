@@ -103,5 +103,5 @@ Area.diamond = function(weight, height) {
 console.log('Area 類別的版本:' + Area.version);      //Area 類別的版本:1.0
 console.log('三角形面積:' + Area.triangle(5, 3));    //三角形面積:37.5
 
-var a = new Area();
-console.log('菱形面積:' + a.diamond(10, 2));    // a.diamond is not a function
+//var a = new Area();
+//console.log('菱形面積:' + a.diamond(10, 2));    a.diamond is not a function
