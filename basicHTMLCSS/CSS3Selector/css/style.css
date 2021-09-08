@@ -1,0 +1,119 @@
+/* 屬性選擇器
+---------------------------*/
+
+/*以xx開頭*/
+li[class^="START"] {
+    border-color: #f00;
+}
+
+/*以xx結尾*/
+li[class$="END"] {
+    border-color: #f00;
+}
+
+/*包含xx*/
+li[class*="CNT"] {
+    border-color: #f00;
+}
+
+/* 練習 =========== */
+
+/*外部網站連結*/
+a[href^="http"] {
+    padding-right: 20px;
+    background: url(../img/icon_blank.gif) right center no-repeat;
+}
+
+/*開啟PDF檔的連結*/
+a[href$=".pdf"] {
+    padding-left: 20px;
+    background: url(../img/icon_pdf.gif) no-repeat;
+}
+
+/* 虛擬類別
+---------------------------*/
+
+/* 〜child型 =========== */
+/*最後1個子元素*/
+.child :last-child {
+    border-color: #f00;
+}
+
+/*第3個子元素*/
+.child :nth-child(3) {
+    color: #f00;
+}
+
+/*倒數第3個子元素*/
+.child :nth-last-child(3) {
+    color: #00f;
+}
+
+/*第偶數個子元素*/
+.child :nth-child(even) {
+    background-color: #ccc;
+}
+
+/*由第2個子元素起，每第3個子元素*/
+.child :nth-child(3n+2) {
+    border: #000 3px solid;
+}
+
+/* 〜of-type型 =========== */
+/*第一個元素*/
+.ofType :first-of-type {
+    border-color: #f00;
+}
+
+/*第偶數個元素*/
+.ofType :nth-of-type(even) {
+    border-color: #00f;
+}
+
+/*唯一一個元素*/
+.ofType :only-of-type {
+    color: #f00;
+}
+
+/* 練習 =========== */
+/*雙色條紋表格*/
+.stripe tr:nth-child(even) {
+    background-color: #eee;
+}
+
+/*最後一列以紅字顯示*/
+.lastRed :last-of-type {
+    color: #f00;
+}
+
+/* 其它虛擬類別
+---------------------------*/
+/*選擇最後一列以外的部份*/
+.nots li:not(:last-child) {
+    border-color: #f00;
+}
+
+/*開啟連結*/
+.target dd:target {
+    display: block;
+}
+
+/*有效選項的Label樣式*/
+.ui input:enabled+label {
+    cursor: pointer;
+}
+.ui input:enabled+label:hover {
+    color: #00c4ab;
+}
+
+/*無效選項的Label樣式*/
+.ui input:disabled+label {
+    color: #ccc;
+}
+
+/*已勾選項目的Label樣式*/
+.ui input:checked+label {
+    background: #cceebb;
+}
+
+
