@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CDN -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+        <title>My Bootstrap Web</title>
+    </head>
+    <body>
+        <div class="container">
+            <form>
+                <div class="mb-3">
+                    <label for="userEmail" class="form-label">電子郵件</label>
+                    <input type="email" class="form-control" id="userEmail">
+                    <div id="userEmail" class="form-text">我們不會外洩您的個資</div>
+                </div>
+                <div class="mb-3">
+                    <label for="userPWD" class="form-label">密碼</label>
+                    <input type="password" class="form-control" id="userPWD">
+                </div>
+                <button type="submit" class="btn btn-primary">提交</button>
+            </form>
+        </div>
+        
+        <br>
+        
+        <div class="container">
+            <form>
+                <input class="form-control form-control-lg" type="text" placeholder="較大欄位">
+                <input class="form-control" type="text" placeholder="預設欄位">
+                <input class="form-control form-control-sm" type="text" placeholder="較小欄位">
+                <input class="form-control" type="text" placeholder="唯讀欄位" readonly>
+            </form>
+        </div>
+        
+        <br>
+        
+        <!-- input -->
+        <div class="container">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="addon1">@</span>
+                <input type="text" class="form-control" placeholder="Username">
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Username">
+                <span class="input-group-text" id="addon2">@example.com</span>
+            </div>
+        </div>
+        
+        <br>
+        
+        <!-- textarea -->
+        <div class="container">
+            <form>
+                <div class="mb-3">
+                    <label for="userIntro" class="form-label">自我介紹</label>
+                    <textarea class="form-control" rows="5" id="userIntro"></textarea>
+                </div>
+            </form>
+        </div>
+        
+        <br>
+        
+        <!-- checkbox -->
+        <div class="container">
+            <form>
+                <div class="form-check">
+                    <input class="form*check-input" type="checkbox" value="CK1" id="CK1">
+                    <label class="form-check-label" for="CK1">雪之下雪乃</label>
+                </div>
+                <div class="form-check">
+                    <input class="form*check-input" type="checkbox" value="CK2" id="CK2" checked>
+                    <label class="form-check-label" for="CK2">一色羽彩</label>
+                </div>
+                <div class="form-check">
+                    <input class="form*check-input" type="checkbox" value="CK3" id="CK3" disabled>
+                    <label class="form-check-label" for="CK3">由比濱結衣</label>
+                </div>
+            </form>
+        </div>
+        
+        <br>
+        
+        <!-- radio -->
+        <div class="container">
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" value="R1" id="R1">
+                    <label class="form-check-label" for="R1">雪之下雪乃</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" value="R2" id="R2" checked>
+                    <label class="form-check-label" for="R2">一色羽彩</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" value="R1" id="R1" disabled>
+                    <label class="form-check-label" for="R1">由比濱結衣</label>
+                </div>
+            </form>
+        </div>
+        <br>
+        <div class="container">
+            <form>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" value="R1" id="R1">
+                    <label class="form-check-label" for="R1">雪之下雪乃</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" value="R2" id="R2" checked>
+                    <label class="form-check-label" for="R2">一色羽彩</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" value="R1" id="R1" disabled>
+                    <label class="form-check-label" for="R1">由比濱結衣</label>
+                </div>
+            </form>
+        </div>
+        
+        <br>
+        
+        <!-- select -->
+        <div class="container">
+            <form>
+                <select class="form-select form-select-lg">
+                    <option value="1" selected>一色羽彩</option>
+                    <option value="2">雪之下雪乃</option>
+                    <option value="3">由比濱結衣</option>
+                </select>
+            </form>
+        </div>
+        <div class="container">
+            <form>
+                <select class="form-select">
+                    <option value="1" selected>一色羽彩</option>
+                    <option value="2">雪之下雪乃</option>
+                    <option value="3">由比濱結衣</option>
+                </select>
+            </form>
+        </div>
+        <div class="container">
+            <form>
+                <select class="form-select form-select-sm">
+                    <option value="1" selected>一色羽彩</option>
+                    <option value="2">雪之下雪乃</option>
+                    <option value="3">由比濱結衣</option>
+                </select>
+            </form>
+        </div>
+    </body>
+    
+</html>
