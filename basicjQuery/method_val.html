@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+        <select id="book">
+            <option value="1">鬼滅之刃</option>
+            <option value="2">進擊的巨人</option>
+            <option value="3">火影忍者</option>
+        </select>
+        <script>
+            $("#book").on("change", function() {
+                alert($('#book').val());
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+        <p id="sui1">すいちゃんは——</p>
+        <p id="kawaii1">今日もかわいい！</p>
+        <p id="sui2">すいちゃんは——</p>
+        <p id="kawaii2">今日もかわいい！</p>
+        <script>
+            $("#sui1").append("<b><i>今日もかわいい！</i></b>");
+            $("#kawaii1").prepend("<b><i>すいちゃんは——</i></b>");
+            $("#sui2").after("<b><i>今日もかわいい！</i></b>");
+            $("#kawaii2").before("<b><i>すいちゃんは——</i></b>");
+        </script>
+    </body>
+</html>

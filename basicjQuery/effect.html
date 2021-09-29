@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+        <button id="hideMsg">hide</button>
+        <button id="showMsg">show</button>
+        <button id="fadeOutMsg">fadeOut</button>
+        <button id="fadeInMsg">fadeIn</button>
+        <button id="slideUpMsg">slideUp</button>
+        <button id="slideDownMsg">slideDown</button>
+        <h1>Hello, world!</h1>
+        <script>
+            $('#hideMsg').on("click", function() {
+                $("h1").hide(600);
+            });
+            $('#showMsg').on("click", function() {
+                $("h1").show(600);
+            });
+            
+            $('#fadeOutMsg').on("click", function() {
+                $("h1").fadeOut(600);
+            });
+            $('#fadeInMsg').on("click", function() {
+                $("h1").fadeIn(600);
+            });
+            
+            $('#slideUpMsg').on("click", function() {
+                $("h1").slideUp(600);
+            });
+            $('#slideDownMsg').on("click", function() {
+                $("h1").slideDown(600);
+            });
+        </script>
+    </body>
+</html>

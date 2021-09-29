@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+        <input type="text">
+        <p id="msg"></p>
+        <script>
+            $("input").on({
+                "click": function() { $('#msg').text("單行文字方塊被按一下"); },
+                "focusin": function() { $('#msg').text("單行文字方塊取得焦點"); }
+            });
+        </script>
+    </body>
+</html>
