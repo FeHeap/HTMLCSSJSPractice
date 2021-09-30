@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> 
+        <title>Exercise 1</title>
+        <link href="css.css" rel="stylesheet" media="all">
+    </head>
+    <body>
+        <div>
+            <strong>起始日期</strong>
+            <br>
+            <table>
+                <tr>
+                    <td>日:</td>
+                    <td></td>
+                    <td>月:</td>
+                    <td></td>
+                    <td>年:</td>
+                </tr>
+                <tr>
+                    <td><input class="when date" type="text" placeholder="dd" maxlength="2" title="請輸入1~31代表一個月內第幾天的數字"></td>
+                    <td><strong>/</strong></td>
+                    <td><input class="when month" type="text" placeholder="mm" maxlength="2" title="請輸入1~12代表月份的數字"></td>
+                    <td><strong>/</strong></td>
+                    <td><input class="when year" type="text" placeholder="yyyy" maxlength="4" title="請輸入四位數字的西元年"></td>
+                </tr>
+            </table>
+            <button id="today">今天</button>
+            
+            <div id="bottom">
+                <div id="change">
+                    <br>
+                    <br>
+                    <select>
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                    </select>
+                </div>
+                <table id="">
+                    <tr>
+                        <td><input class="change cyear" type="text" placeholder="0"></td>
+                        <td>年</td>
+                    </tr>
+                    <tr>
+                        <td><input class="change cmonth" type="text" placeholder="0"></td>
+                        <td>月</td>
+                    </tr>
+                    <tr>
+                        <td><input class="change cweek" type="text" placeholder="0"></td>
+                        <td>週</td>
+                    </tr>
+                    <tr>
+                        <td><input class="change cdate" type="text" placeholder="0"></td>
+                        <td>天</td>
+                    </tr>
+                
+                </table>
+            </div>
+            <div id="count"><button id="doCount"><strong>計算</strong></button></div>
+            
+            
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+            <script type="text/javascript" src="js.js"></script>
+        </div>
+    </body>
+</html>
