@@ -4,7 +4,7 @@ $(function(){
 
 $("#today").on("click", function() {
     var current = new Date();
-    $(".date").val(current.getDate());
+    $(".date").val(dateMap[current.getDate()]);
     $(".month").val(monthMap[current.getMonth()+1]);
     $(".year").val(current.getFullYear());
 });
@@ -23,7 +23,7 @@ $("#doCount").on("click", function() {
     //yyyy-mm-dd
     var flag = true;
     var p = /^(?:(?!0000)[0-9]{4}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-8])|(?:0[13-9]|1[0-2])-(?:29|30)|(?:0[13578]|1[02])-31)|(?:[0-9]{2}(?:0[48]|[2468][048]|[13579][26])|(?:0[48]|[2468][048]|[13579][26])00)-02-29)$/g;
-    var date = $(".year").val() + "-" + monthMap[parseInt($(".month").val())] + "-" + dateMap[$(".date").val()];
+    var date = $(".year").val() + "-" + monthMap[parseInt($(".month").val())] + "-" + dateMap[parseInt($(".date").val())];
     var result = date.match(p);
     if(result == null) {
         alert("輸入不符合規則");
